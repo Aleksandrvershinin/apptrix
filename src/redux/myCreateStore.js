@@ -4,10 +4,12 @@ import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import { authReducer } from "./auth/authReducer";
 import { userReducer } from "./user/userReducer";
+import { tasksReducer } from "./tasks/tasksReducer";
 
 const rootReducer = combineReducers({
     authReducer,
     userReducer,
+    tasksReducer,
 })
 
 export function myCreateStore() {
