@@ -1,6 +1,6 @@
-import { fetchAuth, fetchRefresh } from "../api/apiApptrix";
-import { actionLocalStorage } from "../api/localStorage";
-import { changeAuth } from "./actionTypes";
+import { fetchAuth, fetchRefresh } from "../../api/apiApptrix";
+import { actionLocalStorage } from "../../api/localStorage";
+import { changeAuth } from "../actionTypes";
 
 const headers = {
     'Content-Type': 'application/json;charset=UTF-8',

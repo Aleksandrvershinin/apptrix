@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { authDispatch } from "../redux/authDispatch";
+import { authDispatch } from "../redux/auth/authDispatch";
 
 export function Auth() {
     const [username, setUsername] = useState('erp_user')

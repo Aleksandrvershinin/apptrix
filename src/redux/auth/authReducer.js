@@ -1,4 +1,4 @@
-import { changeAuth } from "./actionTypes";
+import { changeAuth } from "../actionTypes";
 
 const initState = {
     auth: false
