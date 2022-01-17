@@ -5,11 +5,13 @@ import thunk from "redux-thunk";
 import { authReducer } from "./auth/authReducer";
 import { userReducer } from "./user/userReducer";
 import { tasksReducer } from "./tasks/tasksReducer";
+import { workItemsReducer } from "./workItems/workItemsReducer";
 
 const rootReducer = combineReducers({
     authReducer,
     userReducer,
     tasksReducer,
+    workItemsReducer,
 })
 
 export function myCreateStore() {

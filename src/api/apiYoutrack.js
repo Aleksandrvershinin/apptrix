@@ -44,3 +44,19 @@ export async function fetchSearchTasks(value) {
         return res
     }
 }
+
+export async function fetchWorkItems(id) {
+    const req = await fetch(`https://example.youtrack.cloud/api/workItems?fields=created,duration(minutes),author(name),id=${id}`, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': 'Bearer perm:amFuZS5kb2U=.UkVTVCBBUEk=.wcKuAok8cHmAtzjA6xlc4BrB4hleaX',
+            'Cache-Control': 'no-cache',
+            'Content-Type': 'application/json',
+        }
+    })
+    if (req.status === 200) {
+        const res = await req.json()
+        return res
+    }
+}

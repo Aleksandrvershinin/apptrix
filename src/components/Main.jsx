@@ -12,12 +12,14 @@ export function Main({ t }) {
     }, [])
     return (
         <>
+            <button>
+                <Link to='/tasks'>Tasks</Link>
+            </button>
             <p>Name - {user.name}</p>
             <p>Login - {user.login}</p>
             <p>Email - {user.email}</p>
             <p>ID -  {user.id}</p>
             <p>Type - {user.type}</p>
-            <Link to='/tasks'>Tasks</Link>
         </>
     );
 }
