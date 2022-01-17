@@ -6,10 +6,6 @@ import { WorkItem } from "./WorkItem";
 import Pdf from "react-to-pdf";
 
 
-const style = {
-    table: { borderCollapse: 'collapse' },
-}
-
 export function WorkItems() {
     const { id } = useParams();
     const workItems = useSelector(state => state.workItemsReducer.workItems)
@@ -27,7 +23,7 @@ export function WorkItems() {
             <Pdf targetRef={ref} filename="Timesheets.pdf">
                 {({ toPdf }) => <button onClick={toPdf}>Generate Pdf</button>}
             </Pdf>
-            <table ref={ref} border='1' style={style.table}>
+            <table ref={ref} border='1' >
                 <thead>
                     <tr>
                         <th width='200'>Username</th>

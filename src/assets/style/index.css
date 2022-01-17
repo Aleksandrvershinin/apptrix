@@ -17,3 +17,11 @@ code {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+}

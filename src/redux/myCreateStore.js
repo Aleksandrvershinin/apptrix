@@ -3,13 +3,13 @@ import { applyMiddleware, createStore } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
 import thunk from "redux-thunk";
 import { authReducer } from "./auth/authReducer";
-import { userReducer } from "./user/userReducer";
+import { usersReducer } from "./users/usersReducer";
 import { tasksReducer } from "./tasks/tasksReducer";
 import { workItemsReducer } from "./workItems/workItemsReducer";
 
 const rootReducer = combineReducers({
     authReducer,
-    userReducer,
+    usersReducer,
     tasksReducer,
     workItemsReducer,
 })

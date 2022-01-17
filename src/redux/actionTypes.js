@@ -1,5 +1,5 @@
 export const changeAuth = 'changeAuth'
-export const changeUser = 'changeUser'
+export const changeUsers = 'changeUsers'
 export const changeTasks = 'changeTasks'
 export const changeAutoComplitTasks = 'changeAutoComplitTasks'
 export const changeWorkItems = 'changeWorkItems'

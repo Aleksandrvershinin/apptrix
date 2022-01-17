@@ -5,7 +5,6 @@ import { autoComplitTasksDispatch, searchTasksDispatch, tasksDispatch } from "..
 import { Task } from "./Task";
 
 const style = {
-    table: { borderCollapse: 'collapse' },
     input: { width: '300px', height: '30px', },
     form: { margin: '20px 0', position: 'relative', width: 'max-content' },
     button: { height: '36px', width: '100px', cursor: 'pointer' },

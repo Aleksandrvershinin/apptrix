@@ -1,9 +1,9 @@
-export async function fetchUser() {
-    const req = await fetch('https://example.youtrack.cloud/api/admin/users/me?fields=id,login,name,email', {
+export async function fetchUsers() {
+    const req = await fetch('https://example.youtrack.cloud/api/users?fields=id,login,name,email', {
         method: 'GET',
         headers: {
             'Accept': 'application/json',
-            'Authorization': 'Bearer perm:cm9vdA==.NDktNQ==.U9qYToWJGGM0yfVz5wjeYYas7FDvGL',
+            'Authorization': 'Bearer perm:am9obi5kb2U=.UG9zdG1hbiBKb2huIERvZQ==.jJe0eYhhkV271j1lCpfknNYOEakNk7',
             'Cache-Control': 'no-cache'
         }
     })

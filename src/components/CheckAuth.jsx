@@ -8,7 +8,7 @@ export function CheckAuth({ children }) {
         if (auth) {
             return <>{children} </>
         } else {
-            return <Navigate to='/auth' />
+            return <Navigate to='/auth' replace />
         }
     }
     return (
